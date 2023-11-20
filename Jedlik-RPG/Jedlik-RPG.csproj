@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63177864-B156-4A3B-89F3-1183B920A538}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jedlik_RPG</RootNamespace>
+    <AssemblyName>Jedlik-RPG</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Büfé.xaml.cs">
+      <DependentUpon>Büfé.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Diáktanya.xaml.cs">
+      <DependentUpon>Diáktanya.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.xaml.cs">
+      <DependentUpon>Intro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KonyhásHarc.xaml.cs">
+      <DependentUpon>KonyhásHarc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KonyhásIntro.xaml.cs">
+      <DependentUpon>KonyhásIntro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LiptákHarc.xaml.cs">
+      <DependentUpon>LiptákHarc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LiptákIntro.xaml.cs">
+      <DependentUpon>LiptákIntro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lose.xaml.cs">
+      <DependentUpon>Lose.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MódosHarc.xaml.cs">
+      <DependentUpon>MódosHarc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MódosIntro.xaml.cs">
+      <DependentUpon>MódosIntro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NitsHarc.xaml.cs">
+      <DependentUpon>NitsHarc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NitsIntro.xaml.cs">
+      <DependentUpon>NitsIntro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PetiHarc.xaml.cs">
+      <DependentUpon>PetiHarc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PetiIntro.xaml.cs">
+      <DependentUpon>PetiIntro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RempiHarc.xaml.cs">
+      <DependentUpon>RempiHarc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RempiIntro.xaml.cs">
+      <DependentUpon>RempiIntro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RempiIroda.xaml.cs">
+      <DependentUpon>RempiIroda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Választ1.xaml.cs">
+      <DependentUpon>Választ1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Választ2.xaml.cs">
+      <DependentUpon>Választ2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vége.xaml.cs">
+      <DependentUpon>Vége.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Intro2.xaml.cs">
+      <DependentUpon>Intro2.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Büfé.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Diáktanya.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Intro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Karakterválasztó.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KonyhásHarc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KonyhásIntro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LiptákHarc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LiptákIntro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lose.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Adatok.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Karakterválasztó.xaml.cs">
+      <DependentUpon>Karakterválasztó.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MódosHarc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MódosIntro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NitsHarc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NitsIntro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PetiHarc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PetiIntro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RempiHarc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RempiIntro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RempiIroda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Választ1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Választ2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vége.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Intro2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="Retrograde-Regular.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vázlat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\nyuszi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fegyverek.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pancelok.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pixelesjedlik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\foni.png" />
+    <Resource Include="Képek\geri.png" />
+    <Resource Include="Képek\patrik.png" />
+    <Resource Include="Képek\tibi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\bubi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\módos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\iroda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\bubi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\110kulcs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\ebedlo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\konyhas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\kaja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\nits.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\folyoso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\lepcso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\peti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\liptak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\diaktanya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\bufe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\liptakterem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\kard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\rempi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\rempigonosz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\folyoso2.png" />
+    <Resource Include="Képek\folyosocursed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\feher.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\win.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Képek\hatter.jpg" />
+    <Resource Include="Képek\pog_hatter.png" />
+    <Resource Include="Képek\kamuiroda.png" />
+    <Content Include="Képek\kezdes_zene.wav" />
+    <Content Include="Képek\szomi.wav" />
+    <Resource Include="Képek\lose.png" />
+    <Content Include="Képek\muzsika.mp3" />
+    <Content Include="Képek\muzsika2.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

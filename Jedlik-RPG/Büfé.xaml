@@ -1,0 +1,22 @@
+﻿<Window x:Class="Büf.Büfé"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jedlik_RPG"
+        mc:Ignorable="d"
+        Background="{DynamicResource hatterkep}"
+        Title="Jedlik RPG" Height="720" Width="1280">
+    <Window.Resources>
+        <ImageSource x:Key="forras">Képek/bufe.png</ImageSource>
+        <ImageBrush x:Key="hatterkep" ImageSource="{DynamicResource forras}" Opacity="0.3"></ImageBrush>
+    </Window.Resources>
+    <Grid>
+        <Label Content="Büfé" Foreground="White" HorizontalAlignment="Left" Margin="554,34,0,0" VerticalAlignment="Top" FontFamily="/Jedlik-RPG;component/#Retrograde" Height="70" Width="343" FontSize="48"/>
+        <Label Content="Válassz egy képességet amit fejlesztessz!" Foreground="White" HorizontalAlignment="Left" Margin="166,138,-136,0" VerticalAlignment="Top" FontFamily="/Jedlik-RPG;component/#Retrograde" Height="80" Width="1242" FontSize="36"/>
+        <Button x:Name="Btn_Spell1" Content="for honorozás" HorizontalAlignment="Left" Margin="166,295,0,0" VerticalAlignment="Top" Width="223" Height="112" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="15" Click="Btn_Spell1_Click" />
+        <Button x:Name="Btn_Spell2" Content="for honorozás" HorizontalAlignment="Left" Margin="532,295,0,0" VerticalAlignment="Top" Width="223" Height="112" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="15" Click="Btn_Spell2_Click" />
+        <Button x:Name="Btn_Spell3" Content="for honorozás" HorizontalAlignment="Left" Margin="914,295,0,0" VerticalAlignment="Top" Width="223" Height="112" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="15" Click="Btn_Spell3_Click" />
+
+    </Grid>
+</Window>

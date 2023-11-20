@@ -1,0 +1,21 @@
+﻿<Window x:Class="Jedlik_RPG.Választ2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jedlik_RPG"
+        mc:Ignorable="d"
+        Background="{DynamicResource hatterkep}"
+        Title="Jedlik_RPG" Height="720" Width="1280">
+    <Window.Resources>
+        <ImageSource x:Key="forras">Képek/lepcso.png</ImageSource>
+        <ImageBrush x:Key="hatterkep" ImageSource="{DynamicResource forras}" Opacity="0.3"></ImageBrush>
+    </Window.Resources>
+    <Grid>
+        <Label Foreground="White" Content="Merre mész tovább?" HorizontalAlignment="Left" Margin="398,65,0,0" VerticalAlignment="Top" Height="78" Width="516" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="36"/>
+        <Button x:Name="Ebédlő" Content="102" HorizontalAlignment="Left" Margin="84,280,0,0" VerticalAlignment="Top" Width="155" Height="72" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="22" Click="Ebédlő_Click" />
+        <Button x:Name="Igazgatói" Content="Diáktanya" HorizontalAlignment="Left" Margin="1053,280,0,0" VerticalAlignment="Top" Width="163" RenderTransformOrigin="0.853,-0.3" Height="72" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="22" Click="Igazgatói_Click"/>
+
+    </Grid>
+</Window>
+

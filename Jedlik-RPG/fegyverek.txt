@@ -1,0 +1,13 @@
+Név;DMG;Leírás
+Forma 1-es makett autó;4;.
+Megkeményedett zokni;10;Vajon mi lehet benne?
+Üres kávés pohár;5;Ha lenne is benne valami hasznosabb lenne.
+Szlovák történelem zsebkönyve;7;Bár csak 6 oldal van benne, így is nagyot üt.
+Radiátor rács;13;Gyakori fegyver, mivel mindegyik radiátor széteső állapotban van.
+Tábla szivacs;-10;Tökéletes az ellenfelek megsimogatására.
+Asztal láb;20;Egy zöld asztalláb, bár a festék kezd elkopni néhány helyen.
+"Szék";32;Szertárból szerzett szék, aminek már csak a vas kerete van épen.
+Fa pálca;25;Egyik tanterem sarkában talált simított fa pálca. Körmözéssel kapcsolatos emlékek fognak el amikor ránézel.
+Könyv;11;Ki gondolta volna hogy lesz még haszna az Egri Csillagoknak.
+Töltőkábel;5;Biztos megéri ezt használni?
+Billentyűzet;17;Végülis így is lehet nyerni Typeracerbe.

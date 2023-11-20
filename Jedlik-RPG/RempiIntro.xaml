@@ -1,0 +1,25 @@
+﻿<Window x:Class="RempiI.RempiIntro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jedlik_RPG"
+        mc:Ignorable="d"
+        Title="Jedlik RPG" Height="720" Width="1280">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush x:Name="hatter" ImageSource="Képek/folyoso2.png" Stretch="UniformToFill" Opacity="0.9"/>
+        </Grid.Background>
+        <Image x:Name="karakterKép" Source="Képek/foni.png" HorizontalAlignment="Left" Height="372" Margin="24,282,0,0" VerticalAlignment="Top" Width="332"/>
+        <Image x:Name="ellenfélKép" FlowDirection="RightToLeft" Source="Képek/rempi.png" HorizontalAlignment="Left" Height="372" Margin="974,282,-20,0" VerticalAlignment="Top" Width="318"/>
+        <Image x:Name="BubiKarakter" HorizontalAlignment="Left" Height="116" Margin="42,212,0,0" VerticalAlignment="Top" Width="486" Source="Képek/bubi.png" Stretch="UniformToFill"/>
+        <Image x:Name="BubiRempi" HorizontalAlignment="Left" Height="121" Margin="724,212,0,0" VerticalAlignment="Top" Width="474" Source="Képek/bubi.png" FlowDirection="RightToLeft" Stretch="UniformToFill"/>
+        <Image x:Name="Bubi1" Source="Képek/bubi2.png" HorizontalAlignment="Left" Height="127" Margin="328,35,0,0" VerticalAlignment="Top" Width="618" Stretch="UniformToFill"/>
+        <TextBlock x:Name="Tb1" HorizontalAlignment="Left" Margin="372,66,0,545" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="78" Width="536" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="21" Padding="3"/>
+        <TextBlock x:Name="TbKarakter" HorizontalAlignment="Left" Margin="78,234,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Height="48" Width="421" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="20"/>
+        <TextBlock x:Name="TbRempi" HorizontalAlignment="Left" Margin="760,234,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Height="48" Width="409" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="20"/>
+        <Image Visibility="Hidden" x:Name="kulcs" Source="Képek/110kulcs.png" HorizontalAlignment="Left" Height="150" Margin="871,338,0,0" VerticalAlignment="Top" Width="150"/>
+        <Image x:Name="Feherkep" Source="Képek/feher.jpg" Stretch="UniformToFill" Opacity="0" HorizontalAlignment="Left" Height="689" VerticalAlignment="Top" Width="1272"/>
+    </Grid>
+</Window>

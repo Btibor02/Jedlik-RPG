@@ -1,0 +1,26 @@
+﻿<Window x:Class="MódosI.MódosIntro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jedlik_RPG"
+        mc:Ignorable="d"
+        Background="{DynamicResource hatterkep}"
+        Title="Jedlik RPG" Height="720" Width="1280">
+    <Window.Resources>
+        <ImageSource x:Key="forras">Képek/iroda.png</ImageSource>
+        <ImageBrush x:Key="hatterkep" ImageSource="{DynamicResource forras}" Opacity="0.3"></ImageBrush>
+
+    </Window.Resources>
+    <Grid>
+        <Image x:Name="karakterKép" Source="Képek/foni.png" HorizontalAlignment="Left" Height="372" Margin="24,282,0,0" VerticalAlignment="Top" Width="332"/>
+        <Image x:Name="ellenfélKép" Source="Képek/módos.png" HorizontalAlignment="Left" Height="372" Margin="926,282,0,0" VerticalAlignment="Top" Width="318"/>
+        <Image x:Name="BubiKarakter" HorizontalAlignment="Left" Height="116" Margin="42,212,0,0" VerticalAlignment="Top" Width="486" Source="Képek/bubi.png" Stretch="UniformToFill"/>
+        <Image x:Name="BubiMódos" HorizontalAlignment="Left" Height="121" Margin="724,212,0,0" VerticalAlignment="Top" Width="474" Source="Képek/bubi.png" FlowDirection="RightToLeft" Stretch="UniformToFill"/>
+        <Image x:Name="Bubi1" Source="Képek/bubi2.png" HorizontalAlignment="Left" Height="127" Margin="328,35,0,0" VerticalAlignment="Top" Width="618" Stretch="UniformToFill"/>
+        <TextBlock x:Name="Tb1" HorizontalAlignment="Left" Margin="383,84,351,527" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="78" Width="538" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="30" Padding="3"/>
+        <TextBlock x:Name="TbKarakter" HorizontalAlignment="Left" Margin="78,234,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Height="48" Width="421" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="20"/>
+        <TextBlock x:Name="TbMódos" HorizontalAlignment="Left" Margin="760,234,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Height="48" Width="409" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="20"/>
+        <Image Visibility="Hidden" x:Name="kulcs" Source="Képek/110kulcs.png" HorizontalAlignment="Left" Height="150" Margin="871,338,0,0" VerticalAlignment="Top" Width="150"/>
+    </Grid>
+</Window>

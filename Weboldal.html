@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<title>Jedlik RPG</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Source/w3.css">
+<link rel="stylesheet" href="Source/googlecss.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Source/test.css">
+
+<body>
+
+<!-- Bar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    
+    <!-- Links -->
+    <div class="w3-centered">
+      <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-arrow-up"></i>HOME</a>
+      <a href="#about" class="w3-bar-item w3-button">A JÁTÉKRÓL</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> KARAKTEREK</a>
+
+
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Bezár ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">A JÁTÉKRÓL</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">KARAKTEREK</a>
+  
+</nav>
+
+<!-- Header-->
+<header class="bgimg-1" id="home" >
+  <div>
+    <img src="Source/Főkép.png" width="100%">
+  </div> 
+</header>
+
+<!-- About -->
+<div class="w3-container" style="padding:128px 16px; background-color: darkgrey;" id="about">
+  <h3 class="w3-center">A JÁTÉKRÓL</h3> 
+    <div class="w3-center">
+      <p>Képes vagy megmenteni az iskolát és rájönni, hogy mi történt? Egy izgalmas RPG játék az iskola tanáraira nagyon hajazó ellenfelekkel, hatalmas rejtélyekkel és fordulatokkal</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Team -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">KARAKTEREK</h3>
+  <p class="w3-center w3-large">A 4 hős közül melyikkel fogod megmenteni az iskolát?</p>
+  <div class="w3-row-padding" style="margin-top:64px; background-color: whitesmoke;">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Source/foninagy.png" alt="Foni" style="width:50%; margin: 25%;">
+        <div class="w3-container">
+          <h3>Foni</h3>
+          <p class="w3-opacity">A Magas</p>
+          <p>A csöpögős kosárlabda mozdulataival elkápráztatja az ellenfeleit.</p>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Source/Tibiszemuvegnagy.png" alt="Tibi" style="width:50%; margin: 25%;">
+        <div class="w3-container">
+          <h3>Tibi</h3>
+          <p class="w3-opacity">A Weeb</p>
+          <p>Undorító, rövid történelmű vér folyik ereiben. A kádjában pedig Belle Delphine bathwater-je folyik.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Source/Gergi.png" alt="Geri" style="width:50%; margin: 25%;">
+        <div class="w3-container">
+          <h3>Geri</h3>
+          <p class="w3-opacity">A Kávé Imádó</p>
+          <p>Kollégium által nevelt, koffein éhes vadállat, aki az összes TikTok videót ismeri a Földön.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Source/patrik.png" alt="Patrik" style="width:50%; margin: 25%;">
+        <div class="w3-container">
+          <h3>Patrik</h3>
+          <p class="w3-opacity">A "Viking"</p>
+          <p>"Férfias" sportot néző férfiú akinek a hajára a lányok is irigykedhetnek.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64" id="us">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>A tetejére</a>
+  <div class="w3-xlarge w3-section">
+  </div>
+ 
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

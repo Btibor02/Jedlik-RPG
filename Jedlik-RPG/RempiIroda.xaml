@@ -1,0 +1,19 @@
+﻿<Window x:Class="RempiI.RempiIroda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jedlik_RPG"
+        mc:Ignorable="d"
+        Background="{DynamicResource hatterkep}"
+        Title="RempiIroda" Height="720" Width="1280">
+    <Window.Resources>
+        <ImageSource x:Key="forras">Képek/kamuiroda.png</ImageSource>
+        <ImageBrush x:Key="hatterkep" ImageSource="{DynamicResource forras}" Opacity="0.3"></ImageBrush>
+    </Window.Resources>
+    <Grid>
+        <Image x:Name="karakterKép" Source="Képek/foni.png" HorizontalAlignment="Left" Height="372" Margin="24,282,0,0" VerticalAlignment="Top" Width="332"/>
+        <Image x:Name="Bubi1" Source="Képek/bubi2.png" HorizontalAlignment="Left" Height="127" Margin="328,35,0,0" VerticalAlignment="Top" Width="618" Stretch="UniformToFill"/>
+        <TextBlock x:Name="Tb1" HorizontalAlignment="Left" Margin="382,62,0,549" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="78" Width="538" FontFamily="/Jedlik-RPG;component/#Retrograde" FontSize="23" Padding="3"/>
+    </Grid>
+</Window>

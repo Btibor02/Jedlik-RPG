@@ -1,0 +1,26 @@
+﻿<Window x:Class="KarakterV.Karakterválasztó"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jedlik_RPG"
+        mc:Ignorable="d"
+        Background="{DynamicResource hatterkep}"
+        Title="Karakterválasztó" Height="720" Width="1280">
+    <Window.Resources>
+        <ImageSource x:Key="forras">Képek/pog_hatter.png</ImageSource>
+        <ImageBrush x:Key="hatterkep" ImageSource="{DynamicResource forras}" Opacity="0.3"></ImageBrush>
+
+    </Window.Resources>
+    <Grid>
+        <Label Content="Ki segítsen a tanár úrnak?!" Foreground="White" HorizontalAlignment="Left" Margin="198,128,0,0" VerticalAlignment="Top" FontFamily="/Jedlik-RPG;component/#Retrograde" Height="80" Width="938" FontSize="50"/>
+        <Image x:Name="foni" Source="Képek/foni.png" HorizontalAlignment="Center" Stretch="Uniform" VerticalAlignment="Center" Height="340" Margin="80,349,982,0" Width="210"/>
+        <Image x:Name="tibi" Source="Képek/tibi.png" HorizontalAlignment="Left" Stretch="Uniform" Height="340" Margin="421,349,0,0" VerticalAlignment="Top" Width="210"/>
+        <Image x:Name="geri" Source="Képek/geri.png" HorizontalAlignment="Left" Stretch="Uniform" Height="340" Margin="731,349,0,0" VerticalAlignment="Top" Width="210"/>
+        <Image x:Name="patrik" Source="Képek/patrik.png" HorizontalAlignment="Left" Stretch="Uniform" Height="340" Margin="1000,349,0,0" VerticalAlignment="Top" Width="210"/>
+        <Button x:Name="FoniGomb" HorizontalAlignment="Left" Margin="80,349,0,0" VerticalAlignment="Top" Width="193" Height="325" Opacity="0" Click="FoniGomb_Click"/>
+        <Button x:Name="TibiGomb" HorizontalAlignment="Left" Margin="444,349,0,0" VerticalAlignment="Top" Width="187" Height="325" Click="TibiGomb_Click" Opacity="0"/>
+        <Button x:Name="PatrikGomb" HorizontalAlignment="Left" Margin="1000,349,0,0" VerticalAlignment="Top" Width="210" Height="325" Click="PatrikGomb_Click" Opacity="0"/>
+        <Button x:Name="GeriGomb" HorizontalAlignment="Left" Margin="750,349,0,0" VerticalAlignment="Top" Width="191" Height="325" Click="GeriGomb_Click" Opacity="0"/>
+    </Grid>
+</Window>

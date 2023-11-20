@@ -1,0 +1,12 @@
+Név;DEF;Leírás
+Corsair headset;3;Igazán lecserélhetném ezt már.
+Kosaras cipő;5;Aurája és bűze a gázkamrákkal vetekedik.
+Összefonott viking haj;6;Aranyhajjal vetekedő hajcsomó.
+MP4 gázmaszk;8;A kollégiumi élet egyik kötelező kelléke.
+Vödör;7;Reméled, hogy kimosták ezt mielőtt eltették.
+Acélbetétes bakancs;11;Szinte széteső állapotban, de az acél még megvan.
+Cargo Shorts;8;Imádkozz hogy térd alá nem ütnek.
+Kevlar;20;Valaki nagyon paranoiás volt az iskolában történtek után.
+Összebarkácsolt fa mellvért;14;Túl sok szabadidejük van a gépészeknek.
+Maszk;6;Várjunk ez nem kötelező?
+Jordan 11 cipők;50;Olyan csöpögőssé váltál, majdnem az egész iskola beázik.
