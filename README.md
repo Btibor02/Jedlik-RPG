@@ -1,7 +1,8 @@
 # Jedlik-RPG
 School project
 
-Teammates:
--Gergely Gurumlai
--Dávid Pákozdi
--Patrik Miski
+Contributors:
+- Tibor Blascsok
+- Gergely Gurumlai
+- Dávid Pákozdi
+- Patrik Miski
